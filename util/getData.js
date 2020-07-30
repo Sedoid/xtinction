@@ -17,7 +17,6 @@ if (req.url == '/all'){
 
     stream.on('finish',()=>{
         let data = jsonFile.readFileSync(path.join(__dirname,'../','data','filename.json'));
-        console.log('done')
 
         res.send(data)
         next()

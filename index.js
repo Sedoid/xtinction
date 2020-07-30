@@ -11,7 +11,7 @@ app.use('/data',dataRoute)
 
 // process.env.PORT
 
-app.listen(3000,()=>{
+app.listen(process.env.PORT,()=>{
     console.log('Server running on port 3000')
 })
 
